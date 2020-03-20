@@ -1,0 +1,78 @@
+body {
+
+    border-style: border-box;
+}
+
+.container {
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+
+}
+
+.page {
+
+    background-color: white;
+    margin: 20px;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+ 
+}
+
+.title {
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6vw;
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+
+}
+
+.pulse {
+
+    animation: pulse 3s infinite;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+.object {
+
+    background-color: inherit;
+    position: absolute;
+    bottom: 10%;
+    
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
